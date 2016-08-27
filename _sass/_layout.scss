@@ -1,36 +1,91 @@
 /**
  * Site header
  */
-.site-header {
+#header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
+    background: #333333 url("../img/header.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 6em 0;
+    text-align: center;
+    background-position: 0% 65%;
     position: relative;
-}
+    text-color:white;}
 
-.site-title {
-    font-size: 26px;
+
+    #header.before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(16, 32, 48, 0.25)
+    }
+
+    .site-title {
+    color:white;
+    font-size: 6em;
     font-weight: 300;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
     }
-}
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+    .homepage {
+  		padding: 8em 0;
+  		background-position: center;
+  	}
 
-    .menu-icon {
-        display: none;
+    #header > * {
+      position: relative;
+      z-index: 1;
     }
+  	#logo {
+  		font-size: 2em;
+
+  	}
+
+  	#nav > ul {
+  		margin: -3em;
+  		padding-bottom: 0em;
+  	}
+
+  		#nav > ul > li {
+  			border-radius: 10px 10px 0 0;
+  			display: inline-block;
+  			margin-left: 0em;
+  			padding: 0.5em 1.5em;
+  		}
+
+  			#nav > ul > li a {
+  				color: #FFF;
+  				text-decoration: none;
+  				font-size: 1.2em;
+  			}
+
+  			#nav > ul > li:first-child {
+  				margin-left: 0;
+  			}
+
+  			#nav > ul > li:hover a {
+  				color: #fff;
+  			}
+
+  			#nav > ul > li.active {
+  				background: #dc0733;
+  			}
+
+  				#nav > ul > li.active a {
+  					color: white;
+  				}
+
+  			#nav > ul > li > ul {
+  				display: none;
+  			}
 
     .page-link {
         color: $text-color;
@@ -75,10 +130,6 @@
             display: none;
         }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
 
         .page-link {
             display: block;
@@ -90,7 +141,7 @@
             margin-left: 20px;
         }
     }
-}
+
 
 
 
