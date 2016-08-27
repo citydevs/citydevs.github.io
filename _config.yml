@@ -7,7 +7,7 @@
 
 # Site settings
 title: CityDevs
-email: your-email@domain.com
+email: hola@citydevs.mx
 description: CityDevs somos un colectivo multidisciplinario enfocado en el desarrollo de tecnología cívica, la apertura de datos y mejorar la comunicación entre ciudadanía y gobierno.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://citydevs.mx" # the base hostname & protocol for your site
